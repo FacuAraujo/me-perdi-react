@@ -1,0 +1,14 @@
+$bg: #F9F8F6;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    background-color: $bg;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
