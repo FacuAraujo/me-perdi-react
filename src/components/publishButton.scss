@@ -1,0 +1,23 @@
+$orange: #FD8D1C;
+
+.btn {
+    background-color: $orange;
+    border: 0;
+    padding: 15px 40px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    transition: all .1s;
+    outline: 0;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    &:active {
+        transition: all 0;
+        background-color: lighten($orange, 10%);
+    }
+}
