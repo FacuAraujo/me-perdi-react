@@ -1,11 +1,14 @@
 import React from 'react';
 
+// Import styles
+import './header.scss';
+
 function Header(){
     return(
-        <header>
+        <header className="main-header">
             <div className="container">
                 <div className="logo">Me Perdí</div>
-                <PublishButton></PublishButton>
+                {/* <PublishButton></PublishButton> */}
             </div>
         </header>
     );
