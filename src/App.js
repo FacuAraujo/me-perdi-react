@@ -1,7 +1,8 @@
 import React from 'react';
+import FindYourPet from './components/FindYourPet';
 
 function App() {
-  return ();
+  return (<FindYourPet></FindYourPet>);
 }
 
 export default App;
