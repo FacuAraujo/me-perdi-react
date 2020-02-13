@@ -1,3 +1,7 @@
+$orange: #FD8D1C;
+$darkgray: #3A3834;
+$lightgray: #C9C6C0;
+
 .popup {
     position: absolute;
     top: 0;
@@ -12,4 +16,105 @@
 .popup-form {
     background-color: #fff;
     width: 50%;
+    border-radius: 15px;
+    padding: 50px 0;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    .content {
+        width: 60%;
+    }
+
+    .close-button {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        cursor: pointer;
+    }
+
+    .title {
+        font-size: 1.5em;
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+
+    form {
+        input[type="file"]{
+            margin-bottom: 20px;
+        }
+
+        .form-row {
+            margin-bottom: 20px;            
+            text-align: center;            
+            
+            .form-label {
+                display: block;
+                font-size: .8em;
+                text-align: left;
+                margin-bottom: 5px;
+                position: relative;
+                top: 35px;
+                left: 15px;
+                cursor: text;
+                transition: all .2s ease;
+                color: $lightgray;
+            }            
+
+            input {
+                width: 100%;
+                padding: 15px 15px;
+                border: 0;
+                border-radius: 10px;
+                background-color: #f8f7f6;
+                outline: none;     
+            }
+
+            textarea {
+                width: 100%;
+                padding: 15px 15px;
+                border: 0;
+                border-radius: 10px;
+                background-color: #f8f7f6;
+                outline: none;
+            }           
+        }       
+
+        .form-row-col {
+            display: flex;
+            justify-content: center;
+
+            .form-col:nth-child(1) {
+                margin-right: 1em;
+            }   
+
+            .name-col {
+                flex: 1 2 100%;
+            }
+            
+            .date-col {
+                flex: 2 3 100%;
+            }
+
+            .email-col {
+                flex: 1 1 100%;
+            }
+
+            .phone-col {
+                flex: 1 1 100%;
+            }                        
+        }
+
+        .is-focus {
+            .form-label {
+                top: 0;
+                color: $orange;
+            }
+        }
+
+        input[type="submit"] {
+            width: 100%;
+        }
+    }
 }
