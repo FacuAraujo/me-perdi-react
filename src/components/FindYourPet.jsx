@@ -1,13 +1,14 @@
-import React from 'react';
+import React from 'react'
 
-import Header from './Header';
+// Import components
+import Header from './Header'
+import Pets from './Pets'
 
-function FindYourPet() {
+export default function FindYourPet() {
     return(
         <>
-        <Header></Header>        
+        <Header></Header>
+        <Pets></Pets>        
         </>
     );
 }
-
-export default FindYourPet;

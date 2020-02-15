@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 // import styles
 import './popUpForm.scss';
 
-function PopUpForm(props) {
+export default function PopUpForm(props) {
 
     useEffect(() => {
         document.addEventListener('keydown', props.handleKeydown)
@@ -106,5 +106,3 @@ function PopUpForm(props) {
         </div>
     )
 }
-
-export default PopUpForm

@@ -6,7 +6,7 @@ import PublishButton from './PublishButton';
 // Import styles
 import './header.scss';
 
-function Header(){
+export default function Header(){
     return(
         <header className="main-header">
             <div className="container">
@@ -16,5 +16,3 @@ function Header(){
         </header>
     );
 }
-
-export default Header;
