@@ -1,6 +1,8 @@
-$orange: #FD8D1C;
-$darkgray: #3A3834;
-$lightgray: #C9C6C0;
+$primary: #FD8D1C;
+$textDark: #3A3834;
+$textLight: #C9C6C0;
+$inputBg: #f8f7f6;
+$danger: #FF3C3C;
 
 .popup-form {
     background-color: #fff;
@@ -12,10 +14,28 @@ $lightgray: #C9C6C0;
     display: flex;
     justify-content: center;
     box-shadow: 0 10px 20px #eee;
-    transition: all 2s ease-in-out;
+    animation: fadeIn .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    @keyframes fadeIn {
+        0% {transform: scale(0);}
+        70% {transform: scale(1.03);}
+        100% {transform: scale(1);}
+    }
+
+    @media (max-width: 1200px) {
+        width: 70%;
+    }
+
+    @media (max-width: 890px) {
+        width: 90%;
+    } 
 
     .content {
         width: 60%;
+
+        @media (max-width: 700px) {
+            width: 80%;
+        }
     }
 
     .close-button {
@@ -25,12 +45,20 @@ $lightgray: #C9C6C0;
         cursor: pointer;
         border: 0;
         background: none;
+        color: $textLight;
+        width: 1em;
+        transition: all .2s ease-in-out;
+
+        &:hover {
+            color: $danger;
+        }
     }
 
     .title {
         font-size: 1.5em;
         font-weight: 700;
         margin-bottom: 40px;
+        color: $textDark;
     }
 
     form {
@@ -52,7 +80,7 @@ $lightgray: #C9C6C0;
                 left: 15px;
                 cursor: text;
                 transition: all .2s ease;
-                color: $lightgray;
+                color: $textLight;
             }            
 
             input {
@@ -60,7 +88,7 @@ $lightgray: #C9C6C0;
                 padding: 15px 15px;
                 border: 0;
                 border-radius: 10px;
-                background-color: #f8f7f6;
+                background-color: $inputBg;
                 outline: none;     
             }
 
@@ -69,7 +97,7 @@ $lightgray: #C9C6C0;
                 padding: 15px 15px;
                 border: 0;
                 border-radius: 10px;
-                background-color: #f8f7f6;
+                background-color: $inputBg;
                 outline: none;
             }           
         }       
@@ -77,6 +105,7 @@ $lightgray: #C9C6C0;
         .form-row-col {
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
 
             .form-col:nth-child(1) {
                 margin-right: 1em;
@@ -102,7 +131,7 @@ $lightgray: #C9C6C0;
         .is-focus {
             .form-label {
                 top: 0;
-                color: $orange;
+                color: $primary;
             }
         }
 

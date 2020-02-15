@@ -12,10 +12,6 @@ function PublishButton(){
         setFormVisible(false)
     }
 
-    function handleEscapeOutside() {
-        setFormVisible(false)
-    }
-
     function handleKeydown (event) {
         if(event.key === 'Escape'){
             setFormVisible(false)
@@ -29,7 +25,6 @@ function PublishButton(){
                 <div className="popup">
                     <PopUpForm 
                     handleForm={handleFormVisible} 
-                    onEscapeOutside={handleEscapeOutside} 
                     handleKeydown={handleKeydown}>
                     </PopUpForm>
                 </div>
