@@ -2,17 +2,6 @@ $orange: #FD8D1C;
 $darkgray: #3A3834;
 $lightgray: #C9C6C0;
 
-.popup {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .popup-form {
     background-color: #fff;
     width: 50%;
@@ -23,6 +12,7 @@ $lightgray: #C9C6C0;
     display: flex;
     justify-content: center;
     box-shadow: 0 10px 20px #eee;
+    transition: all 2s ease-in-out;
 
     .content {
         width: 60%;
@@ -33,6 +23,8 @@ $lightgray: #C9C6C0;
         top: 40px;
         right: 40px;
         cursor: pointer;
+        border: 0;
+        background: none;
     }
 
     .title {
