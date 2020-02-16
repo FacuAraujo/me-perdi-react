@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import {Calendar} from 'primereact/calendar'
 
 // import styles
 import './popUpForm.scss';
@@ -48,11 +49,7 @@ function PopUpForm(props) {
 
                     <div className="form-row">                                
                         <label htmlFor="date" className="form-label">¿Cuándo?</label>                     
-                        <input 
-                        type="date" 
-                        name="date" 
-                        id="date" 
-                        />    
+                        <Calendar></Calendar>    
                     </div> 
 
                     <div className="form-row">
