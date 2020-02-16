@@ -1,7 +1,7 @@
-$orange: #FD8D1C;
+$primary: #FD8D1C;
 
 .btn {
-    background-color: $orange;
+    background-color: $primary;
     border: 0;
     padding: 15px 40px;
     border-radius: 10px;
@@ -18,7 +18,7 @@ $orange: #FD8D1C;
 
     &:active {
         transition: all 0;
-        background-color: lighten($orange, 10%);
+        background-color: lighten($primary, 10%);
     }
 }
 
@@ -30,5 +30,6 @@ $orange: #FD8D1C;
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
+    z-index: 9999; 
 }

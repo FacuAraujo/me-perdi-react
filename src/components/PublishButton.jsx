@@ -5,7 +5,7 @@ import PopUpForm from './PopUpForm'
 // Import styles
 import './publishButton.scss'
 
-function PublishButton(){
+export default function PublishButton(){
     const [formVisible, setFormVisible] = useState(false)
 
     function handleFormVisible(){
@@ -40,5 +40,3 @@ function PublishButton(){
 
     
 }
-
-export default PublishButton

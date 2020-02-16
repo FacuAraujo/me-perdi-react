@@ -1,0 +1,52 @@
+$primary: #FD8D1C;
+$textDark: #3A3834;
+$textLight: #C9C6C0;
+$textMoreLight: lighten($textLight, 10%);
+$inputBg: #fff;
+$danger: #FF3C3C;
+
+.filter-bar {
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .filter-item {
+        margin: 0 1.5em;
+        position: relative;
+
+        .filter-input {
+            border: 0;
+            border-radius: 10px;
+            background-color: $inputBg;
+            outline: none;
+            font-family: 'Montserrat', sans-serif;
+
+            &::placeholder {
+                color: $textMoreLight;
+            }
+        }
+
+        .filter-name {
+            padding: 14px 14px 14px 50px;
+        }
+
+        .fa-search {
+            position: absolute;
+            width: 1em;
+            top: 15px;
+            left: 18px;
+            color: $textMoreLight;
+        }
+        
+        .filter-select {
+            padding: 14px 50px;
+            color: $textMoreLight;
+            
+            .option {
+                color: $textDark;
+            }
+        }
+    }
+}
