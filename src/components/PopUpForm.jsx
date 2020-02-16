@@ -1,7 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from 'react'
+
+// import DatePicker from "react-datepicker"
+// import "react-datepicker/dist/react-datepicker.css"
 
 // import styles
-import './popUpForm.scss';
+import './popUpForm.scss'
 
 export default function PopUpForm(props) {
 
@@ -47,12 +50,11 @@ export default function PopUpForm(props) {
                     </div>
 
                     <div className="form-row">                                
-                        <label htmlFor="date" className="form-label">¿Cuándo?</label>                     
-                        <input 
-                        type="date" 
-                        name="date" 
-                        id="date" 
-                        />    
+                        <label htmlFor="date" className="form-label">¿Cuándo?</label>
+                        {/* <DatePicker
+                        selected={this.state.startDate}
+                        onChange={this.handleChange}
+                        />                                          */}
                     </div> 
 
                     <div className="form-row">
